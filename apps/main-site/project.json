@@ -1,0 +1,21 @@
+{
+  "name": "main-site",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/main-site/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "options": {
+        "outputPath": "dist/apps/main-site"
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "main-site:build",
+        "dev": true
+      }
+    }
+  }
+}
