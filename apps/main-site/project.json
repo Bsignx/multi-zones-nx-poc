@@ -16,6 +16,14 @@
         "buildTarget": "main-site:build",
         "dev": true
       }
+    },
+
+    "serve:built": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "blog:build",
+        "dev": false
+      }
     }
   }
 }

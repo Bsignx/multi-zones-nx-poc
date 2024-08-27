@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function Index() {
@@ -16,6 +17,8 @@ export default function Index() {
               Welcome blogg 👋
             </h1>
           </div>
+
+          <Link href="/sub">to sub</Link>
 
           <div id="hero" className="rounded">
             <div className="text-container">

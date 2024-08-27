@@ -1,21 +1,24 @@
+import { UiComponents } from 'ui-components';
+import { add } from 'shared-utils';
 import styles from './page.module.css';
 
 export default function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.css file.
-   */
+  console.log(add(1, 2));
   return (
     <div className={styles.page}>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
+            <UiComponents />
             <h1>
               <span> Hello there, </span>
               Welcome main-site 👋
             </h1>
           </div>
+
+          <a href="/blog">to blog</a>
+          <br />
+          <a href="/blog/sub">to sub</a>
 
           <div id="hero" className="rounded">
             <div className="text-container">
