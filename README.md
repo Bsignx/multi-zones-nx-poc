@@ -48,6 +48,12 @@ Run Storybook
 nx run ui-components:storybook
 ```
 
+Run e2e tests
+
+```sh
+nx run main-site-e2e:e2e
+```
+
 ## Versioning and releasing
 
 To version and release the library use
